@@ -16,7 +16,7 @@ class libros extends Controller
      */
     public function index()
     {
-        //
+        return "Stiven";
     }
 
     /**
@@ -48,7 +48,7 @@ class libros extends Controller
      */
     public function show($id)
     {
-        //
+       return $id;
     }
 
     /**
