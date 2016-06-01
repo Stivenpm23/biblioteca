@@ -16,17 +16,16 @@ class libros extends Controller
      */
     public function index()
     {
-        return "Hola controlador";
+        return view('index');
     }
 
     /**
      * Show the form for creating a new resource.
-     *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        return "Creando";
+        return "Creando ";
     }
 
     /**
@@ -48,7 +47,7 @@ class libros extends Controller
      */
     public function show($id)
     {
-       return "Ver libro con id".$id;
+       return "Ver libro con id ".$id;
     }
 
     /**
@@ -59,7 +58,7 @@ class libros extends Controller
      */
     public function edit($id)
     {
-        //
+        return "editar ".$id;
     }
 
     /**

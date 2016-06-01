@@ -19,3 +19,14 @@ $factory->define(app\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(app\mlibros::class, function (Faker\Generator $faker) {
+    return [
+        'nombre' => $faker->name,
+        'cant_libros' => $faker->randomNumber(),
+        'precio' => $faker->numberBetween(2000,500000),
+        'autor' => $faker->name,
+        'referencia' => $faker->paragraph,
+        'fecha_publi' => $faker->date(),
+    ];
+});
